@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-# Codedeploy-Pipeline
-=======
-# Book Recommendation App
 
 This repository contains the code for a simple **Flask-based Book Recommendation Web Application**. It integrates a **CI/CD pipeline** using **Jenkins**, **AWS CodeDeploy**, **S3**, and **EC2**, enabling automatic deployment whenever new code is pushed to the repository.
 
