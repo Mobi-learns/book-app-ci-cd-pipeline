@@ -3,10 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to My WebApp</title>
+    <title>Book Recommendation System</title>
 </head>
 <body>
-    <h1>Hello, this is a simple static web app!</h1>
-	<h2> I am testing the deployment!</h2>	
+    <h1>Book Recommendation System</h1>
+
+    <h2>Add a Book</h2>
+    <form action="/add" method="post">
+        <input type="text" name="title" placeholder="Book title" required>
+        <input type="text" name="author" placeholder="Author">
+        <input type="text" name="genre" placeholder="Genre">
+        <input type="text" name="added_by" placeholder="Your name" required>
+        <button type="submit">Add Book</button>
+    </form>
+
+    <h2>All Books</h2>
+    <ul>
+        {% for book in books %}
+        <li><strong>{{ book.title }}</strong> by {{ book.author }} (Genre: {{ book.genre }}) - Added by {{ book.added_by }}</li>
+        {% endfor %}
+    </ul>
+
+    <a href="/recommend">Get Recommendations</a>
 </body>
 </html>
+
