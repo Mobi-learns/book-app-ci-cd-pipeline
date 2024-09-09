@@ -1,13 +1,14 @@
 version: 0.0
 os: linux
 files:
-  - source: /
+  - source: webapp/
     destination: /var/www/html
 
 hooks:
   BeforeInstall:
-    - location: scripts/install_dependencies.sh
+    - location: webapp/scripts/install_dependencies.sh
       timeout: 300
   ApplicationStart:
-    - location: scripts/start_server.sh
+    - location: webapp/scripts/start_server.sh
       timeout: 300
+
