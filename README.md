@@ -2,6 +2,8 @@
 This repository contains the code for a simple **Flask-based Book Recommendation Web Application**. It integrates a **CI/CD pipeline** using **Jenkins**, **AWS CodeDeploy**, **S3**, and **EC2**, enabling automatic deployment whenever new code is pushed to the repository.
 
 ## Features
+
+
 - **Homepage**: A simple landing page displaying the main structure of the app.
 - **Recommendation Page**: Displays a curated list of recommended books.
 - **Flask Backend**: Powered by Python's Flask framework.
